@@ -1,61 +1,172 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📚 TiengAnh - Nền Tảng Học & Luyện Thi Tiếng Anh Trực Tuyến
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.style=for-the-badge)
 
-## About Laravel
+**TiengAnh** là ứng dụng web toàn diện hỗ trợ học tập, ôn luyện và kiểm tra trình độ Tiếng Anh được xây dựng trên nền tảng **Laravel 12** kết hợp **Vite** và giao diện hiện đại. Hệ thống tích hợp đầy đủ các kỹ năng học thuật (Nghe, Nói, Đọc, Viết, Từ vựng, Ngữ pháp) cùng hệ thống quản trị khóa học dành cho Admin.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🚀 Tính Năng Nổi Bật
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👨‍🎓 Dành cho Học viên (User)
+* **Tổng quan học tập (Dashboard):** Theo dõi tiến độ, số điểm kinh nghiệm (XP), cấp độ hiện tại.
+* **Rèn luyện 4 Kỹ năng:**
+  * **Listening (Luyện nghe):** Bài tập nghe theo chủ đề với file âm thanh trực quan.
+  * **Speaking (Luyện nói):** Thực hành phát âm và hội thoại.
+  * **Reading (Luyện đọc):** Bài đọc hiểu ngắn và chuyên sâu.
+  * **Writing (Luyện viết):** Bài tập viết câu, đoạn văn và luận.
+* **Củng cố kiến thức:**
+  * **Vocabulary (Từ vựng):** Tra cứu và học từ vựng theo cấp độ/chủ đề.
+  * **Grammar (Ngữ pháp):** Hệ thống lý thuyết và bài tập ngữ pháp từ cơ bản đến nâng cao.
+  * **Flashcards:** Thẻ ghi nhớ thông minh giúp ghi nhớ từ mới hiệu quả.
+  * **Exercises & Exams:** Kho bài tập tự luyện và các đề thi thử thời gian thực.
+* **Động lực & Tương tác:**
+  * **Leaderboard (Bảng xếp hạng):** Tuyên dương top học viên có thành tích xuất sắc.
+  * **Learning Progress:** Thống kê chi tiết quá trình hoàn thành bài học.
+  * **Trang cá nhân & Cài đặt:** Quản lý thông tin tài khoản, mật khẩu, cấu hình giao diện.
 
-## Learning Laravel
+### 🛡️ Dành cho Quản trị viên (Admin)
+* **Admin Dashboard:** Thống kê tổng quan số lượng khóa học, bài học và người dùng.
+* **Quản lý Khóa học & Bài học (Course & Lesson Management):**
+  * Thêm, sửa, xóa các khóa học theo cấp độ (A1 - C2).
+  * Quản lý danh sách bài học thuộc từng khóa học.
+* **Quản lý Người dùng (User Management):**
+  * Xem danh sách học viên và thông tin chi tiết.
+  * Phân quyền tài khoản (User / Admin).
+  * Xóa tài khoản hoặc quản lý trạng thái.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Công Nghệ Sử Dụng
 
-## Laravel Sponsors
+* **Backend:** PHP 8.2+, Laravel 12.x (MVC Framework)
+* **Database:** MySQL / MariaDB (Hỗ trợ SQLite cho môi trường test)
+* **Frontend:** Blade Templates, Vite, Tailwind CSS / Custom CSS, JavaScript (ES6+)
+* **Authentication:** Laravel Session Guard & Role-based Access Control (RBAC)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## 📋 Yêu Cầu Hệ Thống
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Trước khi cài đặt, hãy đảm bảo máy tính của bạn đã cài sẵn:
+* **PHP:** `>= 8.2` (cần bật các extension `pdo_mysql`, `mbstring`, `openssl`, `curl`)
+* **Composer:** `>= 2.x`
+* **Node.js:** `>= 18.x` & **npm**
+* **MySQL Server:** `>= 8.0` hoặc MariaDB (XAMPP / Laragon / MySQL Service)
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 📦 Hướng Dẫn Cài Đặt & Khởi Chạy
 
-## Code of Conduct
+### Cách 1: Khởi chạy nhanh bằng script (Khuyên dùng trên Windows)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Dự án có sẵn script khởi động tự động kiểm tra MySQL, chạy Laravel Server và mở trình duyệt:
 
-## Security Vulnerabilities
+1. Chạy file **`start-server.bat`** (Nhấp đúp chuột hoặc click chuột phải chọn *Run as administrator*).
+2. Hệ thống sẽ tự động bật MySQL service, khởi chạy Laravel development server và mở trình duyệt tại địa chỉ `http://localhost:8000`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+### Cách 2: Cài đặt thủ công (Manual Setup)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# TestTiengAnh
-# TestTiengAnh
+#### 1. Clone repository & Truy cập thư mục dự án
+```bash
+git clone <repository-url>
+cd TiengAnh
+```
+
+#### 2. Cài đặt các thư viện phụ thuộc (Dependencies)
+```bash
+# Cài đặt PHP packages
+composer install
+
+# Cài đặt Node modules
+npm install
+```
+
+#### 3. Cấu hình file môi trường (`.env`)
+Sao chép file `.env.example` thành `.env`:
+```bash
+cp .env.example .env
+```
+Cập nhật thông tin kết nối Cơ sở dữ liệu trong `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=tienganh
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+#### 4. Khởi tạo Application Key & Database
+```bash
+# Tạo APP_KEY
+php artisan key:generate
+
+# Chạy Migration và nạp dữ liệu mẫu (Seeder)
+php artisan migrate --seed
+```
+
+#### 5. Khởi chạy Server
+Mở 2 cửa sổ terminal:
+
+* **Terminal 1 (Backend):**
+  ```bash
+  php artisan serve
+  ```
+* **Terminal 2 (Frontend Assets - Vite):**
+  ```bash
+  npm run dev
+  ```
+
+Mở trình duyệt và truy cập: **`http://127.0.0.1:8000`**
+
+---
+
+## 🔑 Tài Khoản Quản Trị Mặc Định
+
+Sau khi chạy lệnh `php artisan db:seed` (hoặc `php artisan migrate --seed`), hệ thống sẽ khởi tạo sẵn tài khoản Admin:
+
+* **Email:** `admin@tienganh.vn`
+* **Mật khẩu:** `Admin@123`
+* **Quyền hạn:** Quản trị viên (Admin)
+
+> ⚠️ *Lưu ý: Bạn nên đổi mật khẩu tài khoản admin ngay sau lần đăng nhập đầu tiên để đảm bảo an toàn.*
+
+---
+
+## 📂 Cấu Trúc Thư Mục Dự Án
+
+```
+TiengAnh/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/           # Controllers dành cho Admin
+│   │   │   └── Auth/            # Controllers xác thực (Login, Register)
+│   │   └── Middleware/         # Phân quyền & kiểm tra truy cập
+│   └── Models/                  # Eloquent Models (User, Course, Lesson, ...)
+├── database/
+│   ├── migrations/              # Các cấu trúc bảng CSDL
+│   └── seeders/                 # Dữ liệu mẫu (AdminSeeder, DatabaseSeeder)
+├── public/                      # Chứa tài nguyên công khai (Images, Audio, CSS, JS)
+├── resources/
+│   ├── views/                   # Giao diện Blade Templates
+│   └── js / css / scss          # File frontend nguồn
+├── routes/
+│   └── web.php                  # Định tuyến ứng dụng Web
+├── start-server.bat             # Batch script khởi động nhanh ứng dụng
+├── start-server.ps1             # PowerShell script tự động hóa khởi động
+└── vite.config.js               # Cấu hình Vite build tool
+```
+
+---
+
+## 📝 Giấy Phép (License)
+
+Dự án được phát triển dưới giấy phép [MIT License](LICENSE).
