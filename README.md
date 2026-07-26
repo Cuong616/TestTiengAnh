@@ -74,7 +74,7 @@ Dự án có sẵn script khởi động tự động kiểm tra MySQL, chạy L
 
 #### 1. Clone repository & Truy cập thư mục dự án
 ```bash
-git clone (https://github.com/Cuong616/TestTiengAnh)
+git clone https://github.com/Cuong616/TestTiengAnh
 cd TiengAnh
 ```
 
