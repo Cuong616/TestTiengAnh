@@ -4,7 +4,6 @@
 ![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-6.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.style=for-the-badge)
 
 **TiengAnh** là ứng dụng web toàn diện hỗ trợ học tập, ôn luyện và kiểm tra trình độ Tiếng Anh được xây dựng trên nền tảng **Laravel 12** kết hợp **Vite** và giao diện hiện đại. Hệ thống tích hợp đầy đủ các kỹ năng học thuật (Nghe, Nói, Đọc, Viết, Từ vựng, Ngữ pháp) cùng hệ thống quản trị khóa học dành cho Admin.
 
